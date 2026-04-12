@@ -1,0 +1,95 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import storybook from 'eslint-plugin-storybook';
+
+import js from '@eslint/js';
+import globals from 'globals';
+import { configs, parser } from 'typescript-eslint';
+
+import { defineConfig } from 'eslint/config';
+import stylistic from '@stylistic/eslint-plugin';
+import { importX, createNodeResolver } from 'eslint-plugin-import-x';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
+
+// @ts-expect-error ignore type errors
+import pluginPromise from 'eslint-plugin-promise';
+
+import { includeIgnoreFile } from '@eslint/compat';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const gitignorePath = path.resolve(__dirname, '.gitignore');
+
+export default defineConfig(
+  includeIgnoreFile(gitignorePath),
+  {
+    ignores: [
+      '**/*.d.ts',
+      'out',
+      'cdk.out',
+      '**/generated/**',
+      '**/*.js',
+    ],
+  },
+  js.configs.recommended,
+  ...configs.strict,
+  ...configs.stylistic,
+  pluginPromise.configs['flat/recommended'],
+  // @ts-expect-error ignore type error
+  ...storybook.configs['flat/recommended'],
+  {
+    files: ['**/*.ts'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parser,
+      globals: globals.browser,
+      parserOptions: {
+        projectService: {
+          allowDefaultProject: ['.storybook/*'],
+        },
+        tsconfigRootDir: __dirname,
+      },
+    },
+    plugins: {
+      'import-x': importX,
+      '@stylistic': stylistic,
+    },
+    extends: [
+      'import-x/flat/recommended',
+    ],
+    settings: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+        }),
+        createNodeResolver(),
+      ],
+    },
+    rules: {
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
+
+      'import-x/order': [
+        'error',
+        {
+          'groups': [
+            // Imports of builtins are first
+            'builtin',
+            // Then sibling and parent imports. They can be mingled together
+            ['sibling', 'parent'],
+            // Then index file imports
+            'index',
+            // Then any arcane TypeScript imports
+            'object',
+            // Then the omitted imports: internal, external, type, unknown
+          ],
+        },
+      ],
+    },
+  },
+);

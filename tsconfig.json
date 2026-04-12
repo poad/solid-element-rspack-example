@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "esnext"],
+    "jsx": "preserve",
+    "target": "esnext",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "jsxImportSource": "solid-js",
+    "useDefineForClassFields": true,
+
+    /* modules */
+    "module": "nodenext",
+    "moduleDetection": "force",
+    "moduleResolution": "nodenext",
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* type checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "types": ["node"]
+  },
+  "include": ["src", ".storybook", "*.config.ts"],
+  "allowDefaultProject": [".storybook/*", "*.config.ts"]
+}
