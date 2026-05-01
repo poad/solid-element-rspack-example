@@ -34,14 +34,14 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.2.1(jiti@2.6.1))
       '@rsbuild/core':
-        specifier: ^2.0.0
-        version: 2.0.0(core-js@3.47.0)
+        specifier: ^2.0.1
+        version: 2.0.1(core-js@3.47.0)
       '@rsbuild/plugin-babel':
         specifier: ^1.1.2
-        version: 1.1.2(@rsbuild/core@2.0.0(core-js@3.47.0))
+        version: 1.1.2(@rsbuild/core@2.0.1(core-js@3.47.0))
       '@rsbuild/plugin-solid':
         specifier: ^1.1.1
-        version: 1.1.1(@babel/core@7.29.0)(@rsbuild/core@2.0.0(core-js@3.47.0))(solid-js@1.9.12)
+        version: 1.1.1(@babel/core@7.29.0)(@rsbuild/core@2.0.1(core-js@3.47.0))(solid-js@1.9.12)
       '@rstest/core':
         specifier: ^0.9.9
         version: 0.9.9(core-js@3.47.0)(happy-dom@20.9.0)
@@ -67,7 +67,7 @@ importers:
         specifier: ^10.2.1
         version: 10.2.1(jiti@2.6.1)
       eslint-import-resolver-typescript:
-        specifier: ^4.4.4
+        specifier: '>=4'
         version: 4.4.4(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.0(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1)))(eslint@10.2.1(jiti@2.6.1))
       eslint-plugin-import-x:
         specifier: ^4.16.2
@@ -640,8 +640,8 @@ packages:
   '@rolldown/pluginutils@1.0.0-rc.12':
     resolution: {integrity: sha512-HHMwmarRKvoFsJorqYlFeFRzXZqCt2ETQlEDOb9aqssrnVBB1/+xgTGtuTrIk5vzLNX1MjMtTf7W9z3tsSbrxw==}
 
-  '@rsbuild/core@2.0.0':
-    resolution: {integrity: sha512-RbVMK3/4l4g+yt2B/cQv+ardlfGroF1Lgcin3pYUbtsLXKPwDjJII8g0XoCvIgapu0kaA+32YmzKlnfnLGx2NA==}
+  '@rsbuild/core@2.0.1':
+    resolution: {integrity: sha512-5TwUpb10Y+VYaYH8oLL/rfJGrhxrk16BiGzv101kzaMPT60MtOXgjEUTxztbjRuq0ifbtRJ/w7rsIZQ4VziWYg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2434,7 +2434,7 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-rc.12': {}
 
-  '@rsbuild/core@2.0.0(core-js@3.47.0)':
+  '@rsbuild/core@2.0.1(core-js@3.47.0)':
     dependencies:
       '@rspack/core': 2.0.0(@swc/helpers@0.5.21)
       '@swc/helpers': 0.5.21
@@ -2443,7 +2443,7 @@ snapshots:
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
 
-  '@rsbuild/plugin-babel@1.1.2(@rsbuild/core@2.0.0(core-js@3.47.0))':
+  '@rsbuild/plugin-babel@1.1.2(@rsbuild/core@2.0.1(core-js@3.47.0))':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-proposal-decorators': 7.29.0(@babel/core@7.29.0)
@@ -2452,17 +2452,17 @@ snapshots:
       '@types/babel__core': 7.20.5
       reduce-configs: 1.1.2
     optionalDependencies:
-      '@rsbuild/core': 2.0.0(core-js@3.47.0)
+      '@rsbuild/core': 2.0.1(core-js@3.47.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@rsbuild/plugin-solid@1.1.1(@babel/core@7.29.0)(@rsbuild/core@2.0.0(core-js@3.47.0))(solid-js@1.9.12)':
+  '@rsbuild/plugin-solid@1.1.1(@babel/core@7.29.0)(@rsbuild/core@2.0.1(core-js@3.47.0))(solid-js@1.9.12)':
     dependencies:
-      '@rsbuild/plugin-babel': 1.1.2(@rsbuild/core@2.0.0(core-js@3.47.0))
+      '@rsbuild/plugin-babel': 1.1.2(@rsbuild/core@2.0.1(core-js@3.47.0))
       babel-preset-solid: 1.9.12(@babel/core@7.29.0)(solid-js@1.9.12)
       solid-refresh: 0.7.8(solid-js@1.9.12)
     optionalDependencies:
-      '@rsbuild/core': 2.0.0(core-js@3.47.0)
+      '@rsbuild/core': 2.0.1(core-js@3.47.0)
     transitivePeerDependencies:
       - '@babel/core'
       - solid-js
@@ -2523,7 +2523,7 @@ snapshots:
 
   '@rstest/core@0.9.9(core-js@3.47.0)(happy-dom@20.9.0)':
     dependencies:
-      '@rsbuild/core': 2.0.0(core-js@3.47.0)
+      '@rsbuild/core': 2.0.1(core-js@3.47.0)
       '@types/chai': 5.2.3
       tinypool: 2.1.0
     optionalDependencies:
