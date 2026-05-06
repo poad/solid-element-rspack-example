@@ -23,7 +23,7 @@
   "devDependencies": {
     "@eslint/compat": "^2.0.5",
     "@eslint/js": "^10.0.1",
-    "@rsbuild/core": "^2.0.2",
+    "@rsbuild/core": "^2.0.3",
     "@rsbuild/plugin-babel": "^1.1.2",
     "@rsbuild/plugin-solid": "^1.1.1",
     "@rstest/core": "^0.9.9",
