@@ -10,6 +10,7 @@ minimumReleaseAgeExclude:
   - lodash@4.18.1
   - lodash-es@4.18.1
   - vite@8.0.5
+  - ws@8.20.1
 
 overrides:
   chokidar: '>=5'
@@ -19,5 +20,6 @@ overrides:
   next@>=16.0.0-beta.0 <16.2.3: '>=16.2.3'
   semver: '>=7'
   vite@>=8.0.0 <=8.0.4: '^8.0.5'
+  ws@>=8.0.0 <8.20.1: ^8.20.1
 
 trustPolicy: no-downgrade
