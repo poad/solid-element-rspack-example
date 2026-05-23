@@ -18,7 +18,7 @@
   "dependencies": {
     "component-register": "^0.8.8",
     "solid-element": "^1.9.1",
-    "solid-js": "^1.9.12"
+    "solid-js": "^1.9.13"
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.0",
@@ -33,7 +33,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@types/node": "^25.8.0",
     "babel-preset-solid": "^1.9.12",
-    "eslint": "^10.3.0",
+    "eslint": "^10.4.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import-x": "^4.16.2",
     "eslint-plugin-promise": "^7.3.0",
