@@ -44,8 +44,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(@babel/core@7.29.0)(@rsbuild/core@2.0.6)(solid-js@1.9.13)
       '@rstest/core':
-        specifier: ^0.9.10
-        version: 0.9.10(happy-dom@20.9.0)
+        specifier: ^0.10.0
+        version: 0.10.0(happy-dom@20.9.0)
       '@storybook/addon-docs':
         specifier: ^10.4.0
         version: 10.4.0(@types/react@19.2.14)(esbuild@0.27.7)(storybook@10.4.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@testing-library/dom@10.4.1)(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(vite@8.0.10(@types/node@25.8.0)(esbuild@0.27.7)(jiti@2.7.0))
@@ -68,7 +68,7 @@ importers:
         specifier: ^10.4.0
         version: 10.4.0(jiti@2.7.0)
       eslint-import-resolver-typescript:
-        specifier: ^4.4.4
+        specifier: '>=4'
         version: 4.4.4(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.3(eslint@10.4.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.4.0(jiti@2.7.0)))(eslint@10.4.0(jiti@2.7.0))
       eslint-plugin-import-x:
         specifier: ^4.16.2
@@ -976,8 +976,8 @@ packages:
       '@swc/helpers':
         optional: true
 
-  '@rstest/core@0.9.10':
-    resolution: {integrity: sha512-JUSUYYXWIHEBUn193u2RglZujvGPv46Blxpl17QFwc0y9vEXe2y/IfGwGrVsJfZz7PaWZ5NnbFf0J55YIIns+g==}
+  '@rstest/core@0.10.0':
+    resolution: {integrity: sha512-TfmMZ/fvGuGCJbOfVE+Fj8mNxs0opSvEaQZm4lkXMZ/Rdvx4d0yIzHSKZ31bOIAUZIiltMXHoTwu8+pwyBHZyg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2061,10 +2061,6 @@ packages:
     resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
     engines: {node: '>=12.0.0'}
 
-  tinypool@2.1.0:
-    resolution: {integrity: sha512-Pugqs6M0m7Lv1I7FtxN4aoyToKg1C4tu+/381vH35y8oENM/Ai7f7C4StcoK4/+BSw9ebcS8jRiVrORFKCALLw==}
-    engines: {node: ^20.0.0 || >=22.0.0}
-
   tinyrainbow@2.0.0:
     resolution: {integrity: sha512-op4nsTR47R6p0vMUUoYl/a+ljLFVtlfaXkLQmqfLR1qHma1h/ysYk4hEXZ880bf2CYgTskvTa/e196Vd5dDQXw==}
     engines: {node: '>=14.0.0'}
@@ -2928,11 +2924,10 @@ snapshots:
     optionalDependencies:
       '@swc/helpers': 0.5.21
 
-  '@rstest/core@0.9.10(happy-dom@20.9.0)':
+  '@rstest/core@0.10.0(happy-dom@20.9.0)':
     dependencies:
       '@rsbuild/core': 2.0.6
       '@types/chai': 5.2.3
-      tinypool: 2.1.0
     optionalDependencies:
       happy-dom: 20.9.0
     transitivePeerDependencies:
@@ -4045,8 +4040,6 @@ snapshots:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-
-  tinypool@2.1.0: {}
 
   tinyrainbow@2.0.0: {}
 
