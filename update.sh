@@ -12,7 +12,6 @@ if ! (git pull --prune); then
   exit 1
 fi
 
-pnpm dlx pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build
 if ! (cd "${CURRENT}" || exit && disable-checkout-persist-credentials && rm -rf node_modules && pnx pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build); then
   cd "${CUR}" || exit
   exit 1
