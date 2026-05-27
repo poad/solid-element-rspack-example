@@ -40,9 +40,9 @@ export default defineConfig(
   ...storybook.configs['flat/recommended'],
   importX.flatConfigs.recommended,
   importX.flatConfigs.typescript,
-  solid,
   {
     files: ['**/*.ts'],
+    ...solid,
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
