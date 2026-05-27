@@ -7,15 +7,15 @@ import js from '@eslint/js';
 import globals from 'globals';
 import { configs, parser } from 'typescript-eslint';
 
-import { defineConfig } from 'eslint/config';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 import stylistic from '@stylistic/eslint-plugin';
 import { importX, createNodeResolver } from 'eslint-plugin-import-x';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
+import solid from 'eslint-plugin-solid/configs/typescript';
+
 // @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
-
-import { includeIgnoreFile } from '@eslint/compat';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -40,6 +40,7 @@ export default defineConfig(
   ...storybook.configs['flat/recommended'],
   importX.flatConfigs.recommended,
   importX.flatConfigs.typescript,
+  solid,
   {
     files: ['**/*.ts'],
     languageOptions: {
