@@ -38,6 +38,8 @@ export default defineConfig(
   pluginPromise.configs['flat/recommended'],
   // @ts-expect-error ignore type error
   ...storybook.configs['flat/recommended'],
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
   {
     files: ['**/*.ts'],
     languageOptions: {
@@ -53,12 +55,8 @@ export default defineConfig(
       },
     },
     plugins: {
-      'import-x': importX,
       '@stylistic': stylistic,
     },
-    extends: [
-      'import-x/flat/recommended',
-    ],
     settings: {
       'import-x/resolver-next': [
         createTypeScriptImportResolver({
