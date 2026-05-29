@@ -35,14 +35,14 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.4.0(jiti@2.7.0))
       '@rsbuild/core':
-        specifier: ^2.0.6
-        version: 2.0.6
+        specifier: ^2.0.7
+        version: 2.0.7
       '@rsbuild/plugin-babel':
         specifier: ^1.1.2
-        version: 1.1.2(@rsbuild/core@2.0.6)
+        version: 1.1.2(@rsbuild/core@2.0.7)
       '@rsbuild/plugin-solid':
         specifier: ^1.2.0
-        version: 1.2.0(@babel/core@7.29.0)(@rsbuild/core@2.0.6)(solid-js@1.9.13)
+        version: 1.2.0(@babel/core@7.29.0)(@rsbuild/core@2.0.7)(solid-js@1.9.13)
       '@rstest/core':
         specifier: ^0.10.1
         version: 0.10.1(happy-dom@20.9.0)
@@ -879,8 +879,8 @@ packages:
   '@rolldown/pluginutils@1.0.0-rc.17':
     resolution: {integrity: sha512-n8iosDOt6Ig1UhJ2AYqoIhHWh/isz0xpicHTzpKBeotdVsTEcxsSA/i3EVM7gQAj0rU27OLAxCjzlj15IWY7bg==}
 
-  '@rsbuild/core@2.0.6':
-    resolution: {integrity: sha512-0/u7oTgPp9NsL7E7qXzYiOOPAsOJiDbOr0FmG6gizJDIpYK8nospogNrwQ00SG0had9fdhLI7XkhP160IaLnWw==}
+  '@rsbuild/core@2.0.7':
+    resolution: {integrity: sha512-LsBONEzsjzOAqO72ot39eI7g53zSfF9QuDXTu4ks8IUX+EZsxRSniQfc+1zVA6a6y3b9KUUtG96avoMLKbWklQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2846,14 +2846,14 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-rc.17': {}
 
-  '@rsbuild/core@2.0.6':
+  '@rsbuild/core@2.0.7':
     dependencies:
       '@rspack/core': 2.0.4(@swc/helpers@0.5.21)
       '@swc/helpers': 0.5.21
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
 
-  '@rsbuild/plugin-babel@1.1.2(@rsbuild/core@2.0.6)':
+  '@rsbuild/plugin-babel@1.1.2(@rsbuild/core@2.0.7)':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-proposal-decorators': 7.29.0(@babel/core@7.29.0)
@@ -2862,17 +2862,17 @@ snapshots:
       '@types/babel__core': 7.20.5
       reduce-configs: 1.1.2
     optionalDependencies:
-      '@rsbuild/core': 2.0.6
+      '@rsbuild/core': 2.0.7
     transitivePeerDependencies:
       - supports-color
 
-  '@rsbuild/plugin-solid@1.2.0(@babel/core@7.29.0)(@rsbuild/core@2.0.6)(solid-js@1.9.13)':
+  '@rsbuild/plugin-solid@1.2.0(@babel/core@7.29.0)(@rsbuild/core@2.0.7)(solid-js@1.9.13)':
     dependencies:
-      '@rsbuild/plugin-babel': 1.1.2(@rsbuild/core@2.0.6)
+      '@rsbuild/plugin-babel': 1.1.2(@rsbuild/core@2.0.7)
       babel-preset-solid: 1.9.12(@babel/core@7.29.0)(solid-js@1.9.13)
       solid-refresh: 0.7.8(solid-js@1.9.13)
     optionalDependencies:
-      '@rsbuild/core': 2.0.6
+      '@rsbuild/core': 2.0.7
     transitivePeerDependencies:
       - '@babel/core'
       - solid-js
@@ -2933,7 +2933,7 @@ snapshots:
 
   '@rstest/core@0.10.1(happy-dom@20.9.0)':
     dependencies:
-      '@rsbuild/core': 2.0.6
+      '@rsbuild/core': 2.0.7
       '@types/chai': 5.2.3
     optionalDependencies:
       happy-dom: 20.9.0
