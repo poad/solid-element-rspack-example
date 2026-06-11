@@ -35,17 +35,17 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.4.1(jiti@2.7.0))
       '@rsbuild/core':
-        specifier: ^2.0.10
-        version: 2.0.10
+        specifier: ^2.0.11
+        version: 2.0.11
       '@rsbuild/plugin-babel':
         specifier: ^1.2.1
-        version: 1.2.1(@rsbuild/core@2.0.10)
+        version: 1.2.1(@rsbuild/core@2.0.11)
       '@rsbuild/plugin-solid':
         specifier: ^1.2.1
-        version: 1.2.1(@babel/core@7.29.7)(@rsbuild/core@2.0.10)(solid-js@1.9.13)
+        version: 1.2.1(@babel/core@7.29.7)(@rsbuild/core@2.0.11)(solid-js@1.9.13)
       '@rstest/core':
         specifier: ^0.10.3
-        version: 0.10.3(happy-dom@20.9.0)
+        version: 0.10.3(happy-dom@20.10.1)
       '@storybook/addon-docs':
         specifier: ^10.4.2
         version: 10.4.2(@types/react@19.2.14)(esbuild@0.27.7)(storybook@10.4.2(@testing-library/dom@10.4.1)(@types/react@19.2.14)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(vite@8.0.10(@types/node@25.9.1)(esbuild@0.27.7)(jiti@2.7.0))
@@ -86,8 +86,8 @@ importers:
         specifier: ^17.6.0
         version: 17.6.0
       happy-dom:
-        specifier: ^20.9.0
-        version: 20.9.0
+        specifier: ^20.10.1
+        version: 20.10.1
       jiti:
         specifier: ^2.7.0
         version: 2.7.0
@@ -874,8 +874,8 @@ packages:
   '@rolldown/pluginutils@1.0.0-rc.17':
     resolution: {integrity: sha512-n8iosDOt6Ig1UhJ2AYqoIhHWh/isz0xpicHTzpKBeotdVsTEcxsSA/i3EVM7gQAj0rU27OLAxCjzlj15IWY7bg==}
 
-  '@rsbuild/core@2.0.10':
-    resolution: {integrity: sha512-PYPBAeHrlMG4X2mACVhDNuOI9LokNIEhljJLSOWi8TEG4WYa5hDPWGmwdkw+2i5PaqLUBZkKTv1cVEXuayV4Zg==}
+  '@rsbuild/core@2.0.11':
+    resolution: {integrity: sha512-Mpp/viUSkVdSWJkFipdZxM2nUztrBwSnMm6Q86bPzLHtHnXqQ3VFpSMlA4wWRyySNddP6s6efKiVpx0ZOCf7Gg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1425,6 +1425,10 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
+  buffer-image-size@0.6.4:
+    resolution: {integrity: sha512-nEh+kZOPY1w+gcCMobZ6ETUp9WfibndnosbpwB1iJk/8Gt5ZF2bhS6+B6bPYz424KtwsR6Rflc3tCz1/ghX2dQ==}
+    engines: {node: '>=4.0'}
+
   bundle-name@4.1.0:
     resolution: {integrity: sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==}
     engines: {node: '>=18'}
@@ -1692,8 +1696,8 @@ packages:
     resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
     engines: {node: '>=18'}
 
-  happy-dom@20.9.0:
-    resolution: {integrity: sha512-GZZ9mKe8r646NUAf/zemnGbjYh4Bt8/MqASJY+pSm5ZDtc3YQox+4gsLI7yi1hba6o+eCsGxpHn5+iEVn31/FQ==}
+  happy-dom@20.10.1:
+    resolution: {integrity: sha512-awPoqPjx8CgjapJllyDlgzgVHjBExcitKK5ZJkxwhQJyQpHFkyS2bEcqCm7IeW20cQvuCI0cz2Ifq79CJKqtiw==}
     engines: {node: '>=20.0.0'}
 
   html-entities@2.3.3:
@@ -2897,14 +2901,14 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-rc.17': {}
 
-  '@rsbuild/core@2.0.10':
+  '@rsbuild/core@2.0.11':
     dependencies:
       '@rspack/core': 2.0.6(@swc/helpers@0.5.23)
       '@swc/helpers': 0.5.23
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
 
-  '@rsbuild/plugin-babel@1.2.1(@rsbuild/core@2.0.10)':
+  '@rsbuild/plugin-babel@1.2.1(@rsbuild/core@2.0.11)':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/plugin-proposal-decorators': 7.29.7(@babel/core@7.29.7)
@@ -2913,17 +2917,17 @@ snapshots:
       '@types/babel__core': 7.20.5
       reduce-configs: 1.1.2
     optionalDependencies:
-      '@rsbuild/core': 2.0.10
+      '@rsbuild/core': 2.0.11
     transitivePeerDependencies:
       - supports-color
 
-  '@rsbuild/plugin-solid@1.2.1(@babel/core@7.29.7)(@rsbuild/core@2.0.10)(solid-js@1.9.13)':
+  '@rsbuild/plugin-solid@1.2.1(@babel/core@7.29.7)(@rsbuild/core@2.0.11)(solid-js@1.9.13)':
     dependencies:
-      '@rsbuild/plugin-babel': 1.2.1(@rsbuild/core@2.0.10)
+      '@rsbuild/plugin-babel': 1.2.1(@rsbuild/core@2.0.11)
       babel-preset-solid: 1.9.12(@babel/core@7.29.7)(solid-js@1.9.13)
       solid-refresh: 0.7.8(solid-js@1.9.13)
     optionalDependencies:
-      '@rsbuild/core': 2.0.10
+      '@rsbuild/core': 2.0.11
     transitivePeerDependencies:
       - '@babel/core'
       - solid-js
@@ -2982,12 +2986,12 @@ snapshots:
     optionalDependencies:
       '@swc/helpers': 0.5.23
 
-  '@rstest/core@0.10.3(happy-dom@20.9.0)':
+  '@rstest/core@0.10.3(happy-dom@20.10.1)':
     dependencies:
-      '@rsbuild/core': 2.0.10
+      '@rsbuild/core': 2.0.11
       '@types/chai': 5.2.3
     optionalDependencies:
-      happy-dom: 20.9.0
+      happy-dom: 20.10.1
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
       - core-js
@@ -3445,6 +3449,10 @@ snapshots:
       node-releases: 2.0.46
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
+  buffer-image-size@0.6.4:
+    dependencies:
+      '@types/node': 25.9.1
+
   bundle-name@4.1.0:
     dependencies:
       run-applescript: 7.1.0
@@ -3731,11 +3739,12 @@ snapshots:
 
   globals@17.6.0: {}
 
-  happy-dom@20.9.0:
+  happy-dom@20.10.1:
     dependencies:
       '@types/node': 25.9.1
       '@types/whatwg-mimetype': 3.0.2
       '@types/ws': 8.18.1
+      buffer-image-size: 0.6.4
       entities: 7.0.1
       whatwg-mimetype: 3.0.0
       ws: 8.21.0
