@@ -32,9 +32,6 @@ export default defineConfig(
       '**/*.js',
     ],
   },
-  js.configs.recommended,
-  ...configs.strict,
-  ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
   // @ts-expect-error ignore type error
   ...storybook.configs['flat/recommended'],
@@ -66,6 +63,11 @@ export default defineConfig(
         createNodeResolver(),
       ],
     },
+    extends: [
+      js.configs.recommended,
+      configs.strict,
+      configs.stylistic,
+    ],
     rules: {
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/indent': ['error', 2],
