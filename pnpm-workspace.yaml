@@ -23,7 +23,8 @@ minimumReleaseAgeExclude:
   - '@rspack/binding-win32-x64-msvc@2.1.0'
   - '@rspack/binding@2.1.0'
   - '@rspack/core@2.1.0'
-  - vite@7.3.2 || 7.3.5
+  - vite@7.3.2 || 7.3.5 || 8.1.2
+
 
 overrides:
   chokidar: '>=5'
@@ -33,5 +34,6 @@ overrides:
   vite@>=7.0.0 <=7.3.1: ^7.3.2
   vite@>=7.0.0 <=7.3.4: ^7.3.5
   vite@>=7.1.0 <=7.3.1: ^7.3.2
+  vite@>=8.0.0: ^8.1.2
 
 trustPolicy: no-downgrade
