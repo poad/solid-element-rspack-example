@@ -30,7 +30,6 @@
     "@testing-library/jest-dom": "^7.0.1",
     "@types/node": "^26.6.3",
     "babel-preset-solid": "^1.9.15",
-    "eslint": "^10.11.0",
     "eslint-plugin-solid": "^0.18.0",
     "eslint-plugin-storybook": "^10.6.0",
     "globals": "^17.12.0",

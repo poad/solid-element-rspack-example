@@ -207,9 +207,6 @@ importers:
       babel-preset-solid:
         specifier: ^1.9.15
         version: 1.9.15(@babel/core@7.29.7)(solid-js@1.9.15)
-      eslint:
-        specifier: ^10.11.0
-        version: 10.11.0(jiti@2.7.0)
       eslint-plugin-solid:
         specifier: ^0.18.0
         version: 0.18.0(eslint@10.11.0(jiti@2.7.0))(typescript@7.0.2)
