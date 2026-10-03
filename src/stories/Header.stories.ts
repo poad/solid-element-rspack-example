@@ -1,8 +1,7 @@
 import { Header } from './Header';
-import { fn } from 'storybook/test';
-
 
 import type { Meta, StoryObj } from 'storybook-solidjs-vite';
+import { fn } from 'storybook/test';
 
 const meta = {
   title: 'Example/Header',
@@ -32,4 +31,3 @@ export const LoggedIn: Story = {
 };
 
 export const LoggedOut: Story = {};
-

@@ -12,7 +12,7 @@ if ! (git pull --prune); then
   exit 1
 fi
 
-if ! (cd "${CURRENT}" || exit && disable-checkout-persist-credentials && rm -rf node_modules && pnx pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build); then
+if ! (cd "${CURRENT}" || exit && disable-checkout-persist-credentials && rm -rf node_modules && pnx pnpm@latest self-update && pnpm install --fix-lockfile -r && rm -rf pnpm-lock.yaml && pnpm clean --lockfile && pnpm up -r --include-github-actions -L && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build); then
   cd "${CUR}" || exit
   exit 1
 fi
