@@ -192,7 +192,7 @@ importers:
         version: 1.2.2(@babel/core@7.29.7)(@rsbuild/core@2.2.12)(solid-js@1.9.17)
       '@rstest/core':
         specifier: ^0.12.3
-        version: 0.12.3(happy-dom@20.14.5)
+        version: 0.12.3(happy-dom@21.0.4)
       '@storybook/addon-docs':
         specifier: ^10.6.1
         version: 10.6.1(@types/react@19.3.0)(storybook@10.6.1(@types/react@19.3.0)(react@19.3.0))
@@ -218,8 +218,8 @@ importers:
         specifier: ^17.13.0
         version: 17.13.0
       happy-dom:
-        specifier: ^20.14.5
-        version: 20.14.5
+        specifier: ^21.0.4
+        version: 21.0.4
       jiti:
         specifier: ^2.7.0
         version: 2.7.0
@@ -2028,8 +2028,8 @@ packages:
     resolution: {integrity: sha512-RwMTC61u7hrG3ZJMkZQOK4JLJrKS8QtoTii63EmWvFXHqycY9FObBJQCbsLxSO8kjKhWE5kV1GC+Vb1g3RI0Zg==}
     engines: {node: '>=18'}
 
-  happy-dom@20.14.5:
-    resolution: {integrity: sha512-x/RzkpWO40bTjIoT30iQtt64FLLmH/iRcUCN2X//bLx7H3ifkdfPXyqsro/OYtqzIAhiLMMA7mmiOR9C3NOKjQ==}
+  happy-dom@21.0.4:
+    resolution: {integrity: sha512-tFm+GaLBgo6o0awHnvHaNoraVo27qJ+2tZEtZ+cIa08hXbeitrxAJajLI05hsUy/2/YTKcUjQYzHe5mCcraLBw==}
     engines: {node: '>=20.0.0'}
 
   hashery@1.5.1:
@@ -3637,13 +3637,13 @@ snapshots:
     optionalDependencies:
       '@swc/helpers': 0.5.23
 
-  '@rstest/core@0.12.3(happy-dom@20.14.5)':
+  '@rstest/core@0.12.3(happy-dom@21.0.4)':
     dependencies:
       '@rsbuild/core': 2.2.12
       '@types/chai': 5.2.3
       cjs-module-lexer: 2.3.0
     optionalDependencies:
-      happy-dom: 20.14.5
+      happy-dom: 21.0.4
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
       - core-js
@@ -4275,7 +4275,7 @@ snapshots:
 
   globals@17.13.0: {}
 
-  happy-dom@20.14.5:
+  happy-dom@21.0.4:
     dependencies:
       '@types/node': 26.6.4
       '@types/whatwg-mimetype': 3.0.2
