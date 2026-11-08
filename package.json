@@ -18,40 +18,40 @@
   "dependencies": {
     "component-register": "^0.8.8",
     "solid-element": "^1.9.2",
-    "solid-js": "^1.9.17"
+    "solid-js": "^1.9.18"
   },
   "devDependencies": {
-    "@rsbuild/core": "^2.2.12",
+    "@rsbuild/core": "^2.3.0",
     "@rsbuild/plugin-babel": "^2.1.0",
     "@rsbuild/plugin-solid": "^1.2.2",
-    "@rstest/core": "^0.12.3",
-    "@storybook/addon-docs": "^10.6.1",
+    "@rstest/core": "^0.12.5",
+    "@storybook/addon-docs": "^10.6.5",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.6",
     "babel-preset-solid": "^1.9.16",
     "eslint-plugin-solid": "^0.18.1",
-    "eslint-plugin-storybook": "^10.6.1",
-    "globals": "^17.13.0",
+    "eslint-plugin-storybook": "^10.6.5",
+    "globals": "^17.14.0",
     "happy-dom": "^21.0.4",
     "jiti": "^2.7.0",
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
-    "storybook": "^10.6.1",
-    "storybook-solidjs-vite": "^10.7.2",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0",
+    "storybook": "^10.6.5",
+    "storybook-solidjs-vite": "^10.7.4",
     "typescript": "^7.0.2",
-    "typescript-eslint": "^8.71.1",
-    "vite": "^8.3.4"
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.5"
   },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.14.0",
+      "version": "12.18.0",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "^24.22.0",
+      "version": "^26.13.0",
       "onFail": "download"
     }
   }
