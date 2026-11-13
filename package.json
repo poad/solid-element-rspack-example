@@ -25,23 +25,23 @@
     "@rsbuild/plugin-babel": "^2.1.0",
     "@rsbuild/plugin-solid": "^1.2.2",
     "@rstest/core": "^0.12.6",
-    "@storybook/addon-docs": "^10.6.5",
+    "@storybook/addon-docs": "^10.6.6",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",
     "@types/node": "^26.6.6",
     "babel-preset-solid": "^1.9.16",
     "eslint-plugin-solid": "^0.18.1",
-    "eslint-plugin-storybook": "^10.6.5",
+    "eslint-plugin-storybook": "^10.6.6",
     "globals": "^17.14.0",
     "happy-dom": "^21.0.4",
     "jiti": "^2.7.0",
     "oxfmt": "^0.76.0",
     "oxlint": "^1.91.0",
-    "storybook": "^10.6.5",
+    "storybook": "^10.6.6",
     "storybook-solidjs-vite": "^10.7.4",
     "typescript": "^7.0.2",
     "typescript-eslint": "^8.72.1",
-    "vite": "^8.3.5"
+    "vite": "^8.3.6"
   },
   "devEngines": {
     "packageManager": {
