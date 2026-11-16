@@ -30,7 +30,7 @@
     "@testing-library/jest-dom": "^7.0.1",
     "@types/node": "^26.6.6",
     "babel-preset-solid": "^1.9.16",
-    "eslint-plugin-solid": "^0.18.1",
+    "eslint-plugin-solid": "^0.19.0",
     "eslint-plugin-storybook": "^10.6.6",
     "globals": "^17.14.0",
     "happy-dom": "^21.0.4",
