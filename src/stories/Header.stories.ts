@@ -1,4 +1,4 @@
-import { Header } from './Header';
+import { Header } from './Header.jsx';
 
 import type { Meta, StoryObj } from 'storybook-solidjs-vite';
 import { fn } from 'storybook/test';

@@ -1,6 +1,6 @@
-import { Button } from './Button';
+import { Button } from './Button.jsx';
 
-import { mergeProps } from 'solid-js';
+import { mergeProps } from '@solidjs/web';
 import './header.css';
 
 export interface HeaderProps {
