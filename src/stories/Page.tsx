@@ -1,4 +1,4 @@
-import { Header } from './Header';
+import { Header } from './Header.jsx';
 
 import { createSignal } from 'solid-js';
 import './page.css';

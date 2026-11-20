@@ -1,7 +1,7 @@
 import style from './index.css';
 
+import { withSolid } from '@solidjs/element';
 import { register, compose } from 'component-register';
-import { withSolid } from 'solid-element';
 /* eslint-disable @typescript-eslint/no-namespace */
 import { createSignal } from 'solid-js';
 
@@ -17,10 +17,10 @@ const Counter = () => {
   );
 };
 
-declare module 'solid-js' {
+declare module '@solidjs/web' {
   namespace JSX {
     interface IntrinsicElements {
-      'solid-counter': Record<string, never>;
+      'solid-counter': HTMLAttributes<HTMLElement>;
     }
   }
 }

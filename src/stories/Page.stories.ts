@@ -1,4 +1,4 @@
-import { Page } from './Page';
+import { Page } from './Page.jsx';
 
 import type { Meta, StoryObj } from 'storybook-solidjs-vite';
 import { expect, userEvent, within } from 'storybook/test';

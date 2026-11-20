@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { Button } from './Button.jsx';
 
 import type { Meta, StoryObj } from 'storybook-solidjs-vite';
 import { fn } from 'storybook/test';

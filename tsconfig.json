@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "lib": ["DOM", "esnext"],
-    "jsx": "preserve",
     "target": "esnext",
     "noEmit": true,
     "skipLibCheck": true,
-    "jsxImportSource": "solid-js",
+    "jsx": "preserve",
+    "jsxImportSource": "@solidjs/web",
     "useDefineForClassFields": true,
 
     /* modules */
