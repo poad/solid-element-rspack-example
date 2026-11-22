@@ -24,7 +24,7 @@
   "devDependencies": {
     "@rsbuild/core": "^2.3.2",
     "@rsbuild/plugin-babel": "^2.1.0",
-    "@rsbuild/plugin-solid": "^2.0.1",
+    "@rsbuild/plugin-solid": "^2.1.0",
     "@rspack/cli": "^2.3.2",
     "@rstest/core": "^0.12.6",
     "@storybook/addon-docs": "^10.6.7",
