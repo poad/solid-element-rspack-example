@@ -8,7 +8,7 @@ allowBuilds:
 minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
   - pnpm@12.23.0
-  - '@rsbuild/plugin-solid@2.1.0'
+  - '@rsbuild/plugin-solid@2.1.1'
   - '@solidjs/babel-plugin@2.0.0'
   - '@solidjs/compiler-darwin-arm64@2.0.0'
   - '@solidjs/compiler-darwin-x64@2.0.0'
@@ -17,13 +17,35 @@ minimumReleaseAgeExclude:
   - '@solidjs/compiler-wasm32-wasi@2.0.0'
   - '@solidjs/compiler-win32-x64-msvc@2.0.0'
   - '@solidjs/compiler@2.0.0'
-  - '@solidjs/element@2.0.1'
-  - '@solidjs/signals@2.0.3'
-  - '@solidjs/web@2.0.3'
+  - '@solidjs/web@2.0.4'
+  - '@solidjs/signals@2.0.4'
+  - solid-js@2.0.4
+  - eslint-plugin-solid@0.20.1
+  - '@solidjs/router@2.0.1'
+  - '@solidjs/vite-plugin@3.0.1'
+  - solid-icons@2.0.0
+  - solid-use@1.0.0
+  - solid-loader@1.0.1
   - '@testing-library/jest-dom@8.0.0'
-  - eslint-plugin-solid@0.20.0
-  - solid-js@2.0.3
-  - solid-loader@0.1.1 || 1.0.1
+  - '@rsbuild/core@2.3.4'
+  - '@rspack/binding-darwin-arm64@2.3.4'
+  - '@rspack/binding-darwin-x64@2.3.4'
+  - '@rspack/binding-linux-arm64-gnu@2.3.4'
+  - '@rspack/binding-linux-arm64-musl@2.3.4'
+  - '@rspack/binding-linux-ppc64-gnu@2.3.4'
+  - '@rspack/binding-linux-riscv64-gnu@2.3.4'
+  - '@rspack/binding-linux-riscv64-musl@2.3.4'
+  - '@rspack/binding-linux-s390x-gnu@2.3.4'
+  - '@rspack/binding-linux-x64-gnu@2.3.4'
+  - '@rspack/binding-linux-x64-musl@2.3.4'
+  - '@rspack/binding-wasm32-wasi@2.3.4'
+  - '@rspack/binding-win32-arm64-msvc@2.3.4'
+  - '@rspack/binding-win32-ia32-msvc@2.3.4'
+  - '@rspack/binding-win32-x64-msvc@2.3.4'
+  - '@rspack/binding@2.3.4'
+  - '@rspack/cli@2.3.4'
+  - '@rspack/core@2.3.4'
+  - '@solidjs/element@2.0.2'
 
 overrides:
   chokidar: '>=5'
