@@ -22,10 +22,10 @@
     "solid-js": "^2.0.3"
   },
   "devDependencies": {
-    "@rsbuild/core": "^2.3.2",
+    "@rsbuild/core": "^2.3.3",
     "@rsbuild/plugin-babel": "^2.1.0",
     "@rsbuild/plugin-solid": "^2.1.0",
-    "@rspack/cli": "^2.3.2",
+    "@rspack/cli": "^2.3.3",
     "@rstest/core": "^0.12.6",
     "@storybook/addon-docs": "^10.6.7",
     "@testing-library/dom": "^10.4.2",
